@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*#########################################################################################################################################
+ * Repository Link: https://github.com/JamesMcDaid91/XmasExam
+ * Auther: James McDaid
+ * Date: 07/01/2022
+ * Xmas Exam 
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -15,10 +15,10 @@ namespace XmasExam
     class Member
     {
         //properties
-        private string _name;
-        private DateTime _joinDate;
-        private decimal _fee;
-        private PaymentScedule _type;
+        public string _name;
+        public DateTime _joinDate;
+        public decimal _fee;
+        public PaymentScedule _type;
         //calculated properties
         public DateTime RenewalDate()
         {
