@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="LabelMemberList" Content="Member List" HorizontalAlignment="Left" Height="27" Margin="35,49,0,0" VerticalAlignment="Top" Width="281" FontSize="14"/>
+        <Label x:Name="LabelMemberDetails" Content="Member Details" HorizontalAlignment="Left" Margin="478,50,0,0" VerticalAlignment="Top" Width="282" FontSize="14"/>
+        <RadioButton x:Name="RadioButtonAll" Content="All" HorizontalAlignment="Left" Margin="35,380,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioButtonRegular" Content="Regular" HorizontalAlignment="Left" Margin="96,380,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioButton" Content="Senior" HorizontalAlignment="Left" Margin="176,380,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioButtonJunior" Content="Junior" HorizontalAlignment="Left" Margin="263,380,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListBoxMemberList" HorizontalAlignment="Left" Height="278" Margin="35,81,0,0" VerticalAlignment="Top" Width="279"/>
+        <TextBlock x:Name="TextBlockMemberDetails" HorizontalAlignment="Left" Height="276" Margin="479,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281"/>
     </Grid>
 </Window>
