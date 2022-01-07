@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace XmasExam
 {
-    enum PaymentScedule
+    public enum PaymentSchedule
     {
-        annual = 1,
-        biannual = 2,
-        monthly = 12,
+        Annual = 1,
+        Biannual = 2,
+        Monthly = 12,
     }
     class Member
     {
         //properties
-        public string _name;
-        public DateTime _joinDate;
-        public decimal _fee;
-        public PaymentScedule _type;
+        public string Name;
+        public DateTime JoinDate;
+        public decimal Fee;
+        public PaymentSchedule PaymentType;
         //calculated properties
         public DateTime RenewalDate()
         {
-            return new DateTime(_joinDate.Year +1,_joinDate.Month,_joinDate.Day); //this will mess up on leap days
+            return new DateTime(JoinDate.Year +1,JoinDate.Month,JoinDate.Day); //this will mess up on leap days
         }
         public int DaysToRenewal()
         {
@@ -31,17 +31,18 @@ namespace XmasExam
         //methods
         public decimal CalculateFees()
         {
-            switch (_type)
+            switch (PaymentType)
             {
-                case PaymentScedule.annual:
-                    return _fee / 1;                    
-                case PaymentScedule.biannual:
-                    return _fee / 2;                    
-                case PaymentScedule.monthly:
-                    return _fee / 12;                  
+                case PaymentSchedule.Annual:
+                    return Fee / 1;                    
+                case PaymentSchedule.Biannual:
+                    return Fee / 2;                    
+                case PaymentSchedule.Monthly:
+                    return Fee / 12;                  
                 default:
-                    return _fee;
+                    return Fee;
             } 
         }
+
     }
 }

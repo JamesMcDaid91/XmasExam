@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace XmasExam
 {
-    class SeniorMember : Member
+    class JuniorMember:Member
     {
         public decimal CalculateFees()
         {
             decimal annualFee = Fee;
-            decimal percentageOff = .75m;
+            decimal percentageOff = .5m;
             switch (PaymentType)
             {
                 case PaymentSchedule.Annual:
-                    annualFee = annualFee/1;
+                    annualFee = annualFee / 1;
                     annualFee = decimal.Multiply(annualFee, percentageOff);
                     return annualFee;
                 case PaymentSchedule.Biannual:
